@@ -1,0 +1,141 @@
+.vehicles {
+  height: calc(100vh - 105px);
+  max-height: 600px;
+  .w-20 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  &-list {
+    top: 50%;
+    padding-top: 30px;
+    transform: translateY(-50%);
+    position: relative;
+  }
+  .backhome {
+    padding: 30px;
+    display: none;
+    align-items: center;
+  }
+  &-item {
+    text-align: center;
+    .w-20 {
+      padding: 0 5px;
+    }
+    img.vehicles-img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .row {
+      row-gap: 80px;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 95%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    i {
+      font-size: 4rem;
+      color: #666;
+    }
+  }
+  .slick-prev {
+    left: 180px;
+  }
+  .slick-next {
+    right: 180px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    li {
+      margin: 0 0.25rem;
+    }
+    button {
+      display: block;
+      width: 55px;
+      height: 2.5px;
+      padding: 0;
+      border: none;
+      outline: none;
+      background-color: $text-gray-dark;
+      text-indent: -9999px;
+    }
+    li.slick-active button {
+      background-color: $blue-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .vehicles {
+    &-list {
+      top: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .vehicles {
+    .backhome {
+      display: flex;
+      position: relative;
+      top: 80px;
+    }
+    &-list {
+      top: 40%;
+    }
+    .w-20 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    &-item {
+      .row {
+        .w-20:nth-child(9) {
+          display: none;
+        }
+        .w-20:nth-child(10) {
+          display: none;
+        }
+      }
+    }
+    .slick-prev {
+      left: 50px;
+    }
+    .slick-next {
+      right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .vehicles {
+    .backhome {
+      position: unset;
+      display: flex;
+    }
+    &-list {
+      top: 0;
+      transform: translateY(0);
+    }
+    .slick-arrow {
+      display: none !important;
+    }
+    .slick-dots {
+      display: none !important;
+    }
+    .w-20 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

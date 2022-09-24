@@ -1,0 +1,83 @@
+.booking-movie {
+  height: 100vh;
+}
+.chair {
+  border: 3px solid orange;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.rowChair {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+}
+.firstChair {
+  color: yellow;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+.firstRow .chair {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: yellow;
+}
+.screen {
+  border-bottom: 50px solid rgb(255, 159, 95);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 100;
+  width: 80%;
+  filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+  font-size: 25px;
+  color: #fff;
+}
+.selectedChair {
+  border: 3px solid orange;
+  background: orange;
+  color: #000;
+  cursor: not-allowed;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+.selectingChair {
+  background: rgb(109, 238, 109);
+  border: 3px solid rgb(109, 238, 109);
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+.ticket-list {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.ticket-list::-webkit-scrollbar {
+  width: 4px;
+}
+.ticket-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.ticket-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f6ab3e 0%, #8037f6 100%);
+  border-radius: 10px;
+}
+.totalAmount {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.totalAmount .numMoney {
+  color: yellow;
+}
+.ticket-unselect {
+  color: #3d6ef7;
+  cursor: pointer;
+}

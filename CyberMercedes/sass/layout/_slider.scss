@@ -1,0 +1,171 @@
+.slider {
+  background-color: #f4f4f4;
+  &-item {
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &-content {
+    position: absolute;
+    left: 165px;
+    top: 0;
+  }
+  &-heading {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    max-width: 555px;
+  }
+  &-desc {
+    padding-bottom: 30px;
+    color: #fff;
+    width: 40%;
+  }
+  &-btn {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #dddddd;
+    padding: 7px 20px 6px;
+    outline: none;
+    transition: all 0.2s ease;
+    text-align: left;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      border: 1px solid #000;
+      background-color: #000;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    background: transparent;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 10px;
+    outline: none;
+    i {
+      font-size: 4rem;
+      color: #fff;
+    }
+  }
+  .slick-prev {
+    left: 53px;
+  }
+  .slick-next {
+    right: 53px;
+  }
+  &-content--first {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 165px;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  .slider {
+    padding-top: 80px;
+    &-item {
+      height: 520px;
+      img {
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+    &-heading {
+      margin-top: 40px;
+    }
+    &-desc {
+      margin-top: 0;
+    }
+    &-content {
+      margin-left: 65px;
+      left: 65px;
+    }
+    .slick-arrow {
+      top: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  .slider {
+    &-item {
+      height: 480px;
+      img {
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+    &-content {
+      position: absolute;
+      left: 65px;
+      // top: 90px;
+      margin-left: 0;
+    }
+    &-heading {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      color: #fff;
+    }
+    &-desc {
+      margin-top: 0;
+      width: 40%;
+      color: #fff;
+    }
+    .slick-arrow {
+      top: 240px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .slider {
+    height: auto;
+    padding: 0;
+    &-item {
+      height: fit-content;
+      min-height: 600px;
+      img {
+        height: auto;
+        min-height: 160px;
+      }
+    }
+    &-heading {
+      margin-bottom: 10px;
+      margin-top: 30px;
+      color: $text-gray-dark;
+    }
+    &-desc {
+      margin-top: 15px;
+      color: $text-gray-dark;
+      width: 100%;
+    }
+    &-content {
+      position: unset;
+      padding: 0 40px 20px;
+    }
+    .slick-arrow {
+      top: 90px;
+      i {
+        font-size: 3.5rem;
+      }
+    }
+    .slick-prev {
+      left: 30px;
+    }
+    .slick-next {
+      right: 30px;
+    }
+  }
+}

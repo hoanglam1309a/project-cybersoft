@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "MBCorpo Title";
+  src: url("../fonts/MBCorpoATitleCond-Regular-Web.woff2");
+}
+@font-face {
+  font-family: "MBCorpo Text";
+  src: url("../fonts/MBCorpoSText-Regular-Web.woff2");
+}
+body {
+  font-size: 14px;
+  font-family: "MBCorpo Text", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "MBCorpo Title", sans-serif;
+}
+.text-gray-dark {
+  color: $text-gray-dark !important;
+}
+.text-blue {
+  color: $blue-color !important;
+}

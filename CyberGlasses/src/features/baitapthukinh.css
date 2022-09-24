@@ -1,0 +1,43 @@
+.container {
+  background: url("https://images.creativemarket.com/0.1.0/ps/2760893/910/606/m2/fpnw/wm1/avwtlo3yz48mxbcq2pcrcm3xshanahwfozyt7kyj2gx63cqsg3nbyi8drsfbzzdw-.jpg?1495990339&s=cef5dd34c19d3c9a2eb0bf28b725c050&fmt=webp")
+    no-repeat;
+  position: relative;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  height: 100vh;
+}
+/* .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+} */
+.glass-header {
+  height: 120px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.glass-selections {
+  background-color: #fff;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 8px;
+}
+.glass-select {
+  width: 160px;
+  border: 1px solid #3d6ef7;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.glass-select:hover {
+  transform: scale(1.1);
+}

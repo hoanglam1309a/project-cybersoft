@@ -1,0 +1,174 @@
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+  .section-heading--main {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .section-heading-desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .header {
+    height: 515px;
+  }
+  .header .navbar {
+    padding: 0 15px;
+  }
+  .header-content .navbar-brand {
+    width: 110px;
+  }
+  .header .carousel-item img {
+    height: 80vh;
+  }
+  .header .btn-buy {
+    padding: 9px 17px;
+    font-size: 1.32em;
+    margin-left: 20px;
+  }
+  .header .header-main__heading {
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+  }
+  .header .header-main__heading--sub {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .header .btn__main {
+    margin-top: 20px;
+  }
+  .header .carousel-control-prev,
+  .header .carousel-control-next {
+    display: none;
+  }
+  .header .carousel-item img {
+    height: 100vh;
+  }
+  .w3-button {
+    display: block;
+    background: transparent !important;
+    z-index: 10;
+    padding: 0;
+  }
+  .header nav .w3-button:hover {
+    background: transparent !important;
+    color: #fff !important;
+  }
+
+  .project .project-item__inner {
+    padding: 0;
+  }
+  .project .project-item {
+    min-height: 400px;
+  }
+
+  .testimonial .tab-content .section-title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+
+  .testimonial .section-desc {
+    font-size: 1.6rem;
+    margin: 10px 0 20px 0;
+  }
+  .testimonial .nav .nav-link {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .testimonial .nav .nav-link:after {
+    width: 100%;
+    left: 0;
+  }
+  .testimonial .nav .nav-link img {
+    width: 100%;
+    height: 120px;
+    margin-left: 0;
+  }
+
+  .news .project-item__inner {
+    padding: 0 40px 0 30px;
+  }
+  .news .project-item__inner .section-title {
+    font-size: 2rem;
+  }
+
+  .project .project-item__inner .section-desc {
+    font-size: 1.6rem;
+  }
+
+  .about .about-top {
+    padding-top: 50px;
+  }
+  .about .section-heading--main {
+    margin-bottom: 20px;
+  }
+  .about .about-tab .nav-item {
+    border: 0;
+  }
+
+  .clients .clients-item img {
+    width: 40%;
+  }
+
+  .footer .section-title {
+    font-size: 3rem;
+  }
+
+  .footer .label-right {
+    text-align: left !important;
+  }
+  .footer .btn {
+    margin-top: 20px;
+    padding: 15px 25px;
+  }
+  .footer .contact h3 {
+    margin: 30px 0 10px 0;
+  }
+  .footer .footer-logo {
+    margin-bottom: 30px;
+    width: 120px;
+  }
+  .project-top,
+  .service-top {
+    padding: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .w3-button {
+    display: block;
+    background: transparent !important;
+    z-index: 10;
+    padding: 0;
+  }
+  .header .header-main__heading {
+    font-size: 8rem;
+  }
+  .testimonial .tab-content .section-title {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    font-weight: 500;
+  }
+  .footer .footer-logo {
+    margin-bottom: 40px;
+  }
+  .footer .contact h3 {
+    margin: 0px 0 30px 0;
+  }
+  .project-top,
+  .service-top {
+    padding: 0;
+  }
+  .footer .label-right {
+    margin-top: 20px;
+    text-align: left !important;
+  }
+  .header .carousel-control-prev,
+  .header .carousel-control-next {
+    display: none;
+  }
+}
