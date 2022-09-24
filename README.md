@@ -6,6 +6,14 @@
 ## Screenshots
 
 <details>
+ <summary>CyberMercedes</summary>
+ <div>
+
+![mercedes-landingpage](https://user-images.githubusercontent.com/96652536/192088858-195ab8ca-588b-478f-bc50-f77da75585f8.png)
+ </div>
+</details>
+
+<details>
  <summary>CyberImroz</summary>
  <div>
 
