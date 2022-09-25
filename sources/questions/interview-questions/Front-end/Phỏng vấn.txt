@@ -1,0 +1,111 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
+
+\f0\b\fs22 \cf0 1. C\uc0\u417  b\u7843 n v\u7873  binding l\'e0 g\'ec? 2-way binding l\'e0 g\'ec, \u432 u \u273 i\u7875 m v\'e0 nh\u432 \u7907 c \u273 i\u7875 m l\'e0 g\'ec? T\u7841 i sao react l\u7841 i k x\'e0i 2 way binding
+\f1\b0 \
++ N\'f3 h\uc0\u7895  tr\u7907  t\u432 \u417 ng t\'e1c gi\u7919 a component v\'e0 view ri\'eang c\u7911 a n\'f3. Gi\'fap \u7913 ng d\u7909 ng c\u7911 a ch\'fang ta tr\u7903  n\'ean linh ho\u7841 t h\u417 n.\
++ 2 way- binding : v\uc0\u7899 i d\u7841 ng binding n\'e0y th\'ec lu\u7891 ng d\u7919  li\u7879 u s\u7869  \u273 i 2 chi\u7873 u t\u7915  component sang view v\'e0 ng\u432 \u7907 c l\u7841 i. Component v\'e0 view s\u7869  \u273 \u432 \u7907 c \u273 \u7891 ng b\u7897  t\u7913 c th\'ec khi c\'f3 thay \u273 \u7893 i t\u7915  1 trong 2 ph\'eda. D\u7841 ng n\'e0y th\u432 \u7901 ng d\'f9ng trong form \u273 \u7875  c\u7853 p nh\u7853 t gi\'e1 tr\u7883  khi ng\u432 \u7901 i d\'f9ng nh\u7853 p v\'e0o.\
+
+\f0\b 2, React s\uc0\u7917  d\u7909 ng virtual DOM v\u7853 y angular x\'e0i g\'ec?\
+ -> Angular x\'e0i change detection\
+
+\f1\b0 + ElementRef, TemplateRef, ViewRef, ComponentRef v\'e0 ViewContainerRef\
+#: reference  template \
+
+\f0\b 3. Detection change l\'e0 g\'ec? Zone.js l\'e0 g\'ec (NgZone)?\
+
+\f1\b0 Change detection l\'e0 m\uc0\u7897 t c\u417  ch\u7871  theo d\'f5i s\u7921  thay \u273 \u7893 i, cho ph\'e9p n\u7897 i dung \u7903  ph\u7847 n giao di\u7879 n lu\'f4n \u273 \u432 \u7907 c \u273 \u7891 ng b\u7897  v\u7899 i s\u7921  thay \u273 \u7893 i trong model t\u432 \u417 ng \u7913 ng. S\u7921  thay \u273 \u7893 i n\'e0y c\'f3 th\u7875  \u273 \u432 \u7907 c ph\'e1t sinh b\u7903 i nh\u7919 ng tr\u432 \u7901 ng h\u7907 p sau:\
+\pard\pardeftab720\li720\fi-360\sl276\slmult1\sa200\partightenfactor0
+\cf0 DOM events (click, hover, \'85)\
+AJAX requests\
+Timers (setTimers(), setInterval())\
+\pard\pardeftab720\sl276\slmult1\sa200\partightenfactor0
+\cf0 Zone.js Hi\uc0\u7875 u n\'f4m na n\'f3 s\u7869  t\u7841 o ra m\u7897 t v\'f9ng context \u273 \u7875  th\u7921 c hi\u7879 n c\'e1c thao t\'e1c b\u7845 t \u273 \u7891 ng b\u7897  (async). Ngh\u297 a l\'e0 b\'e2y gi\u7901  c\'e1c thao t\'e1c async s\u7869  \u273 \u432 \u7907 c ch\u7841 y tr\'ean m\u7897 t v\'f9ng m\'e0 ch\'fang ta c\'f3 th\u7875  qu\u7843 n l\'fd, s\u7901  n\u7855 n v\'e0 t\'e1c \u273 \u7897 ng \u273 \u432 \u7907 c.\
+
+\f0\b Zones are useful for frameworks to know when to render. \
+4.  C\'e1ch giao ti\uc0\u7871 p gi\u7919 a c\'e1c component? Giao ti\u7871 p gi\u7919 a 2 component b\u7857 ng service s\u7869  g\u7863 p issue g\'ec?\
+5. Subject v\'e0 observable trong rxjs ph\'e2n bi\uc0\u7879 t ch\'fang? C\'f3 nh\u7919 ng lo\u7841 i Subject n\'e0o?\
+
+\f1\b0 + BehaviorSubject : ta lu\'f4n c\'f3 th\uc0\u7875  tr\u7921 c ti\u7871 p l\u7845 y ra value cu\u7889 i c\'f9ng \u273 \u432 \u7907 c emit.\
++ ReplaySubject :  ReplaySubject c\'f3 th\uc0\u7875  g\u7917 i c\'e1c value "c\u361 " t\u7899 i c\'e1c subscriber m\u7899 i.\
++ AsyncSubject: h\uc0\u7881  c\'f3 value cu\u7889 i c\'f9ng c\u7911 a Observable execution \u273 \u432 \u7907 c g\u7917 i t\u7899 i subscribers, v\'e0 CH\u7880  KHI execution ho\'e0n t\u7845 t\
++ Tuy nhi\'ean, ch\'fang ta n\'ean d\'f9ng RxJS BehaviorSubject thay v\'ec RxJS Subject v\'ec m\uc0\u7897 t s\u7889  l\'fd do:\
+N\'f3 lu\'f4n lu\'f4n tr\uc0\u7843  v\u7873  m\u7897 t gi\'e1 tr\u7883 \
+N\'f3 c\'f3 ph\uc0\u432 \u417 ng th\u7913 c getValue() gi\'fap ch\'fang ta c\'f3 th\u7875  l\u7845 y ra \u273 \u432 \u7907 c gi\'e1 tr\u7883  m\u7899 i nh\u7845 t\
+N\'f3 \uc0\u273 \u7843 m b\u7843 o r\u7857 ng component s\u7869  lu\'f4n nh\u7853 n gi\'e1 tr\u7883  m\u7899 i nh\u7845 t\
++ subject l\'e0 multicast (cho ph\'e9p \uc0\u273 \u432 a gi\'e1 tr\u7883  \u273 \u7871 n nhi\u7873 u Observers) trong khi observable l\'e0 unitcast (m\u7895 i subscribed Observer s\u7917  h\u7919 u m\u7897 t th\u7921 c thi c\u7911 a observable) => 1 subject c\'f3 th\u7875  c\'f3 nhi\u7873 u th\u7857 ng \u273 \u259 ng k\'ed l\u7855 ng nghe 1 b\u7843 n tin, c\'f2n observable th\'ec m\u7897 t th\u7857 ng 1 b\u7843 n tin (v\'ed d\u7909  v\u7853 y \'e1).\
+
+\f0\b 6. C\'f3 bao nhi\'eau lo\uc0\u7841 i directive? Gi\u7843 i th\'edch t\u7915 ng lo\u7841 i.
+\f1\b0 \
++  Component Directive :   N\'f3 c\'f3 1 class khai b\'e1o selector, c\'e1ch ho\uc0\u7841 t \u273 \u7897 ng, x\u7917  l\'fd c\u7911 a component.\
++ Structural directive: structural directive hay directive c\uc0\u7845 u tr\'fac s\u7869  quy\u7871 t \u273 \u7883 nh DOM element n\'e0o \u273 \u432 \u7907 c th\u7921 c thi.\
++ Attribute directive : Directive thu\uc0\u7897 c t\'ednh l\'e0 c\'e1c directive \u273 \u432 \u7907 c s\u7917  d\u7909 ng nh\u432  m\u7897 t thu\u7897 c t\'ednh c\u7911 a th\u7867  HTML v\u7853 y\
+\
+
+\f0\b OOP\
+1.
+\f1\b0 L\uc0\u7853 p tr\'ecnh h\u432 \u7899 ng \u273 \u7889 i t\u432 \u7907 ng (OOP) l\'e0 m\u7897 t k\u7929  thu\u7853 t l\u7853 p tr\'ecnh cho ph\'e9p l\u7853 p tr\'ecnh vi\'ean t\u7841 o ra c\'e1c \u273 \u7889 i t\u432 \u7907 ng trong code tr\u7915 u t\u432 \u7907 ng h\'f3a c\'e1c \u273 \u7889 i t\u432 \u7907 ng. --> d\u7877  qu\u7843 n l\'fd, duy tr\'ec v\'e0 n\'e2ng c\u7845 p.\
+
+\f0\b 2. 4 t\'ednh n\uc0\u259 ng c\u7911 a OOP\
+
+\f1\b0 + T\'ednh \uc0\u273 \'f3ng g\'f3i: L\'e0 c\'e1ch \u273 \'ea\u777  che d\u226 \u769 u nh\u432 \u771 ng t\'ednh ch\u226 \u769 t x\u432 \u777  l\'fd b\'ean trong cu\u777 a \u273 \u244 \u769 i t\u432 \u417 \u803 ng, nh\u432 \u771 ng \u273 \u244 \u769 i t\u432 \u417 \u803 ng kh\'e1c kh\'f4ng th\'ea\u777  t\'e1c \u273 \'f4\u803 ng tr\u432 \u803 c ti\u234 \u769 p l\'e0m thay \u273 \'f4\u777 i tra\u803 ng th\'e1i  chi\u777  c\'f3 th\'ea\u777  t\'e1c \u273 \'f4\u803 ng th\'f4ng qua c\'e1c method public cu\u777 a \u273 \u244 \u769 i t\u432 \u417 \u803 ng \u273 \'f3\
++ T\'ednh k\uc0\u7871  th\u7915 a:  \
+	- L\'e0 k\uc0\u7929  thu\u7853 t cho ph\'e9p k\u7871  th\u7915 a l\u7841 i nh\u7919 ng t\'ednh n\u259 ng m\'e0 m\u7897 t \u273 \u7889 i t\u432 \u7907 ng kh\'e1c \u273 \'e3 c\'f3, gi\'fap tr\'e1nh vi\u7879 c code l\u7863 p d\u432  th\u7915 a m\'e0 ch\u7881  x\u7917  l\'fd c\'f4ng vi\u7879 c t\u432 \u417 ng t\u7921 .\
+	- l\'e0m \uc0\u273 \u417 n gi\u7843 n h\'f3a thi\u7871 t k\u7871  v\'e0 c\'e0i \u273 \u7863 t c\u7911 a \u7913 ng d\u7909 ng.\
++ T\'ednh \uc0\u273 a h\'ecnh: L\'e0 m\u7897 t \u273 \u7889 i t\u432 \u7907 ng thu\u7897 c c\'e1c l\u7899 p kh\'e1c nhau c\'f3 th\u7875  hi\u7875 u c\'f9ng m\u7897 t th\'f4ng \u273 i\u7879 p theo c\'e1ch kh\'e1c nhau. \
+	-> Method Overloading:  l\'e0 c\'e1ch n\uc0\u7841 p ch\u7891 ng c\'e1c method c\'f3 c\'f9ng t\'ean nh\u432 ng kh\'e1c 		tham s\u7889 \
+	-> Override : ghi \uc0\u273 \'e8\
++ T\'ednh tr\uc0\u7915 u t\u432 \u7907 ng: L\'e0 ph\u432 \u417 ng ph\'e1p tr\u7915 u t\u432 \u7907 ng h\'f3a \u273 \u7883 nh ngh\u297 a l\'ean nh\u7919 ng h\'e0nh \u273 \u7897 ng, t\'ednh ch\u226 \u769 t c\u7911 a lo\u7841 i \u273 \u7889 i t\u432 \u7907 ng n\'e0o \u273 \'f3 c\u7847 n ph\u7843 i c\'f3\
+\
+
+\f0\b * \uc0\u272 \u7879  qui\
+
+\f1\b0 G\uc0\u7885 i l\u7841 i ch\'ednh n\'f3 \u273 \u7875  chia nh\u7887  v\u7845 n \u273 \u7873 \
++ Fibinacci b\uc0\u7857 ng \u273 \u7879  qui:\
+
+\f0\b * Fibonanci l\'e0 g\'ec cho vd.\
+
+\f1\b0 f(n) = f(n-1) + f(n-2) .\
+\
+
+\f0\b RESTFUL API
+\f1\b0 \
+RESTful API l\'e0 m\uc0\u7897 t ti\'eau chu\u7849 n d\'f9ng trong vi\u7879 c thi\u7871 t k\u7871  c\'e1c API cho c\'e1c \u7913 ng d\u7909 ng web \u273 \u7875  qu\u7843 n l\'fd c\'e1c resource. RESTful l\'e0 m\u7897 t trong nh\u7919 ng ki\u7875 u thi\u7871 t k\u7871  API \u273 \u432 \u7907 c s\u7917  d\u7909 ng ph\u7893  bi\u7871 n ng\'e0y nay \u273 \u7875  cho c\'e1c \u7913 ng d\u7909 ng (web, mobile\'85) kh\'e1c nhau giao ti\u7871 p v\u7899 i nhau.\
+\
+Ch\uc0\u7913 c n\u259 ng quan tr\u7885 ng nh\u7845 t c\u7911 a REST l\'e0 quy \u273 \u7883 nh c\'e1ch s\u7917  d\u7909 ng c\'e1c HTTP method (nh\u432  GET, POST, PUT, DELETE\'85) v\'e0 c\'e1ch \u273 \u7883 nh d\u7841 ng c\'e1c URL cho \u7913 ng d\u7909 ng web \u273 \u7875  qu\u7843 n c\'e1c resource. RESTful kh\'f4ng quy \u273 \u7883 nh logic code \u7913 ng d\u7909 ng v\'e0 kh\'f4ng gi\u7899 i h\u7841 n b\u7903 i ng\'f4n ng\u7919  l\u7853 p tr\'ecnh \u7913 ng d\u7909 ng, b\u7845 t k\u7923  ng\'f4n ng\u7919  ho\u7863 c framework n\'e0o c\u361 ng c\'f3 th\u7875  s\u7917  d\u7909 ng \u273 \u7875  thi\u7871 t k\u7871  m\u7897 t RESTful API.\
+\
+
+\f0\b POSTMAN \
+
+\f1\b0 Postman l\'e0 m\uc0\u7897 t c\'f4ng c\u7909  cho ph\'e9p ch\'fang ta thao t\'e1c v\u7899 i API, ph\u7893  bi\u7871 n nh\u7845 t l\'e0 REST. Postman hi\u7879 n l\'e0 m\u7897 t trong nh\u7919 ng c\'f4ng c\u7909  ph\u7893  bi\u7871 n nh\u7845 t \u273 \u432 \u7907 c s\u7917  d\u7909 ng trong th\u7917  nghi\u7879 m c\'e1c API. V\u7899 i Postman, ta c\'f3 th\u7875  g\u7885 i Rest API m\'e0 kh\'f4ng c\u7847 n vi\u7871 t d\'f2ng code n\'e0o.\
+Postman h\uc0\u7895  tr\u7907  t\u7845 t c\u7843  c\'e1c ph\u432 \u417 ng th\u7913 c HTTP (GET, POST, PUT, PATCH, DELETE, \'85). B\'ean c\u7841 nh \u273 \'f3, n\'f3 c\'f2n cho ph\'e9p l\u432 u l\u7841 i l\u7883 ch s\u7917  c\'e1c l\u7847 n request, r\u7845 t ti\u7879 n cho vi\u7879 c s\u7917  d\u7909 ng l\u7841 i khi c\u7847 n.\
+\
+
+\f0\b T\'ccM PH\uc0\u7846 N T\u7916  TH\u7912  2\
+
+\f1\b0 int FindByLoop(int a[], int n)\{\
+    int firstMax, secondMax;\
+    if (a[0] > a[1])\{\
+        firstMax = a[0];\
+        secondMax = a[1];\
+    \}else\{\
+        firstMax = a[1];\
+        secondMax = a[0];\
+    \}\
+    for(int i = 2; i < n; i++)\{\
+        if(a[i] >= firstMax)\{\
+            secondMax = firstMax;\
+            firstMax = a[i];\
+        \}else if (a[i] > secondMax)\{\
+            secondMax = a[i];\
+        \}\
+    \}\
+    return secondMax;\
+\}
+\f0\b \
+}

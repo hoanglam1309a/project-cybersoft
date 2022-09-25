@@ -1,0 +1,17 @@
+- Dự án movie : https://drive.google.com/drive/folders/1nQmSsbeE7UFZbL8cu6_gGTPhaBvOkHfK?usp=sharing
+
+- Dự án elearning: https://drive.google.com/drive/folders/1tkejTPv14kTILx7ZVLc5TiARnnmqLaCz?usp=sharing
+
+- Dự án jira: https://drive.google.com/drive/folders/1WUpiEhcBU1raigfMNgew3EKctC5c4B34?usp=sharing
+
+- Dự án fiver & airbnb: https://youtu.be/wZK7tXkfO18 
+https://github.com/khloe1425/AirBnB_Cyber
+https://github.com/khloe1425/Fiverr_Cyber
+
+- Domain api: 
+fiverr.cybersoft.edu.vn
+airbnb.cybersoft.edu.vn
+movienew.cybersoft.edu.vn/swagger/index.html
+elearningnew.cybersoft.edu.vn/swagger/index.html
+jiranew.cybersoft.edu.vn/swagger/index.html
+https://movienew.cybersoft.edu.vn/swagger/index.html
