@@ -1,6 +1,6 @@
-# Project Cybersoft
+# Some projects I worked on while studying at Cybersoft academy
 
-## Author
+## Overview
 - Nguyễn Hoàng Lâm ( [@lamhoang1256](https://github.com/lamhoang1256) )
 
 ## Screenshots
